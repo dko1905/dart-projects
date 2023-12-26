@@ -6,9 +6,10 @@ bool debug = false;
 void main(List<String> arguments) {
   makeMap();
 
-  var a = "1i=2!=44=5i=6Z=44=3:=4x=aF=b/=5`=fU=g[=iO=jg=jv=ob=kJ=ae=o2=s9=s`=cP=xæ=vK=vM=Cw=væ=E]=BU=B4=CQ=HR=ig=KQ=IM=Og=s+=TJ=O+=Od=Ya=TI=RY=&s=xU=@i=Y4=vh=Yc=uW=u2=x4=%]=Af=&)=Ca=[D=Bw=)F=E1";
+  var a = toBase32Str("Test");
+  print('Encoded: ${a}');
   var b = toBase10Str(a);
-  print('Decoded: ${b}!');
+  print('Decoded: ${b}');
 }
 
 int pow(int base, int exponent) {
@@ -126,7 +127,6 @@ List<int> doThings(int numb){ //converting to new base
 	int remeinder = 0;
 	List<int> remeinders = [];
 	do{
-		print("Numb = $numb ${baseMap.length}");
 		remeinder = numb%baseMap.length;
 		numb = numb~/baseMap.length;
 		if(debug)print("numb = $numb");
