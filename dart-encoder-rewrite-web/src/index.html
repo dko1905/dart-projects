@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Dart encoder</title>
+  <script defer src="./script.ts"></script>
+</head>
+<body>
+  <h1>Dart encoder</h1>
+
+  <label for="mode-toggle">
+    Encrypt/decrypt:
+    <input type="checkbox" name="mode-toggle" id="mode-toggle" checked />
+  </label> <br>
+
+  <label for="text-input">
+    Text input: <br>
+    <textarea name="text-input" id="text-input" cols="80" rows="10"></textarea>
+  </label> <br>
+  <label for="text-output">
+    Output: <br>
+    <textarea readonly name="text-output" id="text-output" cols="80" rows="10"></textarea>
+  </label>
+
+  <p style="font-weight: bold;">Error log</p>
+  <textarea readonly id="error-log" cols="80" rows="15"></textarea>
+</body>
+</html>

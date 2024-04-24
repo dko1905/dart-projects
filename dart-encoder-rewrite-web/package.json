@@ -1,0 +1,16 @@
+{
+  "name": "dart-encoder-rewrite-web",
+  "version": "1.0.0",
+  "description": "",
+  "source": "src/index.html",
+  "scripts": {
+    "dev": "parcel",
+    "build": "parcel build"
+  },
+  "keywords": [],
+  "author": "Daniel Florescu",
+  "license": "MIT",
+  "devDependencies": {
+    "parcel": "^2.10.3"
+  }
+}

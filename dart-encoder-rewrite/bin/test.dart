@@ -12,6 +12,16 @@ void main(List<String> arguments) {
   print('Decoded: ${b}');
 }
 
+String decodeStr(String input) {
+  makeMap();
+  return toBase10Str(input);
+}
+
+String encodeStr(String input) {
+  makeMap();
+  return toBase32Str(input);
+}
+
 int pow(int base, int exponent) {
   // Base case: exponent = 0
   if (exponent == 0) return 1;
@@ -206,4 +216,5 @@ int toBase10(String numb){
 		return baseInvMap[numb]!;
 	}
 }
+
 
